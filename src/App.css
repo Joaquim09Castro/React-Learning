@@ -1,10 +1,25 @@
 .App {
   text-align: center;
+  background-color: #FFFDF8;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+header {
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #F9AE48;
+}
+
+footer {
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #F9AE48;
 }
 
 @media (prefers-reduced-motion: no-preference) {
