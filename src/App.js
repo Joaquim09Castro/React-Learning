@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Home from './Components/Home/Home';
+import Home from './Components/Main/Main';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 
@@ -11,7 +10,6 @@ function App() {
     <div className="App">
       <Header />
       <Home />
-      <img class='App-logo' src={logo}></img>
       <Footer />
     </div>
   );

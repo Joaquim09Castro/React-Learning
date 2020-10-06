@@ -1,6 +1,13 @@
 .App {
   text-align: center;
   background-color: #FFFDF8;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 
+    "header"
+    "home"
+    "footer";
+  grid-template: 60px 100% 40px/ auto;
 }
 
 .App-logo {
@@ -8,14 +15,41 @@
   pointer-events: none;
 }
 
-header {
+.header {
   height: 60px;
   font-size: 24px;
   font-weight: bold;
   background-color: #F9AE48;
+  display: grid;
+  grid-template-columns: repeat(2,1fr) 30% repeat(2,1fr);
 }
 
-footer {
+.main {
+  display: grid;
+  grid-template-columns: 40% 40%;
+}
+
+#name-label { grid-area: labelName; }
+#name-input { grid-area: inputName; }
+#email-label { grid-area: labelEmail; }
+#email-input { grid-area: inputEmail; }
+#msg-label { grid-area: labelMsg; }
+#msg-input { grid-area: inputMsg; }
+#send-btn { grid-area: btnSend; }
+
+
+.form {
+  display: grid;
+  gap: 10px;
+  grid-template: 1fr 1fr 4fr 2fr / 1fr 20% 30% 1fr;
+  grid-template-areas: 
+    " . labelName inputName ."
+    " . labelEmail inputEmail ."
+    " . labelMsg inputMsg ."
+    " . . btnSend .";
+}
+
+.footer {
   height: 40px;
   font-size: 18px;
   font-weight: bold;
