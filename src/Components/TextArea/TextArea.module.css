@@ -1,0 +1,7 @@
+.textArea {
+  text-align: justify;
+}
+
+div > textarea {
+  width: 99%;
+}

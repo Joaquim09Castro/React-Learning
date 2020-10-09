@@ -1,0 +1,12 @@
+.button {
+  display: grid;
+  grid-template-areas: 
+    ". btn";
+}
+
+div > button {
+  grid-area: btn;
+  justify-self: right;
+  height: 60%;
+  width: 40%;
+}

@@ -1,0 +1,10 @@
+.main {
+  display: grid;
+  background-color: #e9e1ce;
+  gap: 15px;
+  grid-template: 0.5fr 2fr 20px / 50% 50%;
+  grid-template-areas: 
+    "title title"
+    "img-comp contact-form"
+    ". .";
+}

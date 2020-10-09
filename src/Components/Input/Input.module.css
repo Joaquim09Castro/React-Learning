@@ -1,0 +1,10 @@
+.input {
+  text-align: justify;
+}
+
+div > input {
+  width: 99%;
+  height: 2em;
+  border: 1px #646464 solid;
+  border-radius: 5px;
+}
