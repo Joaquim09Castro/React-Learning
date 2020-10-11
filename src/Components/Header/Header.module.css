@@ -1,15 +1,20 @@
 .header {
-  height: 60px;
+  height: 70px;
   font-size: 24px;
   font-weight: bold;
-  align-content: center;
-  background-color: #F9AE48;
+  text-align: center;
+  align-items: center;
+  background-color: #E69B35;
   display: grid;
   grid-template-columns: repeat(2,1fr) 30% repeat(2,1fr);
+  box-shadow: 0 1px 60px #000000;
+  border-radius: 0 0 25% 25%;
+  margin-bottom: 10px;
 }
 
 a {
   text-decoration: none;
+  color: #292929;
 }
 
 .logo {
@@ -19,4 +24,9 @@ a {
 
 .links {
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a:hover, .active {
+  text-decoration: underline;
+  color: #89f089;
 }

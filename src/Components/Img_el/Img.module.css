@@ -1,3 +1,12 @@
-.img {
-  grid-area: img-comp;
+.img > img {
+  grid-area: half1;
+  -webkit-margin-before: 0;
+    margin-block-start: 0;
+    grid-area: half1;
+    max-width: 100%;
+    align-self: start;
+    object-fit: cover;
+    max-height: 400px;
+    width: 550px;
+    border-radius: 5px;
 }

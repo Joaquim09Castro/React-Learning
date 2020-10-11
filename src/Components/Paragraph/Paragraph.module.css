@@ -1,0 +1,5 @@
+.paragraph {
+  grid-area: half2;
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 22px;
+}

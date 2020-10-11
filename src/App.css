@@ -1,19 +1,29 @@
 .App {
-  text-align: center;
   display: grid;
+  grid-gap: 20px;
   gap: 20px;
-  grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-  grid-template: 60px 100% 40px/ auto;
+  width: 100%;
+  min-height: 100vh;
+  grid-template-areas:
+      "header"
+      "main"
+      "footer ";
+  grid-template-columns: 6fr;
+  grid-template-rows: 60px auto 40px;
+  background: #fffdf8;
+  grid-auto-rows: 150px;
+}
+
+.title {
+  font-family: var(--titles-font);
+  font-weight: 700;
+  font-size: 30px;
+  color: #920969;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-h1 {
-  grid-area: title;
 }

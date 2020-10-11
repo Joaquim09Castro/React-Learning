@@ -1,13 +1,6 @@
 .form {
-  width: 70%;
-  justify-self: right;
-  grid-area: contact-form;
-  display: grid;
-  gap: 10px;
-  grid-template: 10% 10% 25% 20%/ 80%;
-  grid-template-areas:
-    "name-input"
-    "email-input"
-    "msg-input"
-    "submit-btn";
+  grid-area: half2;
+  align-self: start;
+    display: block;
+    width: 100%;
 }

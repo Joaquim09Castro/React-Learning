@@ -1,12 +1,27 @@
-.button {
+.btnGrid {
   display: grid;
-  grid-template-areas: 
-    ". btn";
+  grid-template: "space btn" 40px / 1fr 1fr;
 }
 
-div > button {
-  grid-area: btn;
-  justify-self: right;
-  height: 60%;
-  width: 40%;
+.space {
+  font-size: 12px;
+    color: #101010;
+    padding: 0;
+    -webkit-margin-before: 2px;
+    margin-block-start: 2px;
+    -webkit-margin-after: 0;
+    margin-block-end: 0;
+    width: 85%;
+}
+
+.btn {
+  font-size: 18px;
+    font-family: var(--body-font);
+    font-weight: 700;
+    color: #e0cbaf;
+    background: #245196;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
 }

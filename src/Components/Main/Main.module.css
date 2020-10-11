@@ -1,10 +1,11 @@
 .main {
   display: grid;
-  background-color: #e9e1ce;
-  gap: 15px;
-  grid-template: 0.5fr 2fr 20px / 50% 50%;
-  grid-template-areas: 
-    "title title"
-    "img-comp contact-form"
-    ". .";
+    width: 80%;
+    justify-self: center;
+    grid-template-areas:
+        "title title"
+        "half1 half2";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    gap: 25px;
 }

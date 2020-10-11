@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import style from './Button.module.css';
 
+const {
+  btnGrid,
+  space,
+  btn
+} = style;
+
 export default class Button extends Component {
   constructor(props) {
     super(props);
@@ -15,8 +21,14 @@ export default class Button extends Component {
   
   render() {
     return (
-      <div className={style.button}>
-        <button type={this.props.type || "button"} onClick={this.click}>{this.props.name}</button>
+      <div className={btnGrid}>
+        
+        <p className={space}></p>
+        
+        <button className={btn} type={this.props.type || "button"}onClick={this.click}>
+          {this.props.name}
+        </button>
+
       </div>
     )
   }
