@@ -15,8 +15,7 @@ export default class Button extends Component {
   }
 
   click() {
-    const text = document.getElementById('msg-input');
-    console.log(text);
+    console.log('teste');
   }
   
   render() {
