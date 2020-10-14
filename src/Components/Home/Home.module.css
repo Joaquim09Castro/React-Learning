@@ -1,0 +1,22 @@
+.home {
+  background: url(../../img/bg-bons-drinks.jpg) no-repeat 50%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.title {
+  font-family: "Bilbo Swash Caps",cursive;
+  font-size: 130px;
+  text-align: center;
+  color: rgb(83, 235, 219);
+  z-index: 2;
+  text-shadow: 6px 6px 8px #294f61;
+  margin-top: 0;
+  animation-name: title;
+  animation-duration: 1.8s;
+}
+
+@keyframes title {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

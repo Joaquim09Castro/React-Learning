@@ -9,7 +9,6 @@
   grid-template-columns: repeat(2,1fr) 30% repeat(2,1fr);
   box-shadow: 0 1px 60px #000000;
   border-radius: 0 0 25% 25%;
-  margin-bottom: 10px;
 }
 
 a {
@@ -29,4 +28,6 @@ a {
 a:hover, .active {
   text-decoration: underline;
   color: #89f089;
+  transform: scale(1.2);
+  transition: transform 0.4s;
 }
