@@ -22,7 +22,7 @@ export default class ContactUs extends Component {
           <Input id="name-input" type="text" name="Name"/>
           <Input id="email-input" type="email" name="Email"/>
           <TextArea name="Message"/>
-          <Button type="" name="submit" />
+          <Button essaPorra="deu ruim" name="submit" />
         </Form>
       </Main>
     )

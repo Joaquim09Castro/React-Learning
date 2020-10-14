@@ -11,6 +11,14 @@ export default class Input extends Component {
   constructor(props) {
     super(props);
     this.basic = "Input-componet";
+
+    this.handleBlur = this.handleBlur.bind(this);
+  }
+
+  handleBlur() {
+    if (!this.value) {
+      alert(`Preencha o Campo ${this.props.name}`)
+    }
   }
 
   render() {
@@ -27,6 +35,7 @@ export default class Input extends Component {
           id={(this.props.id || this.basic) + ' input'}
           placeholder={this.props.placeholder || this.props.name || this.basic}
           type={this.props.type}
+          onBlur={this.handleBlur}
         />
 
       </div>
