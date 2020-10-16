@@ -10,7 +10,16 @@
   text-align: center;
   color: rgb(83, 235, 219);
   z-index: 2;
-  text-shadow: 6px 6px 8px #294f61;
+  text-shadow:
+    7px 7px 5px #234858,
+      2px 0 0 #4443,
+      -2px 0 0 #4443,
+      0 2px 0 #4443,
+      0 -2px 0 #4443,
+      1px 1px 0 #4443,
+      -1px -1px 0 #4443,
+      1px -1px 0 #4443,
+      -1px 1px 0 #4443;
   margin-top: 0;
   animation-name: title;
   animation-duration: 1.8s;

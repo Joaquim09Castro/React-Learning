@@ -1,0 +1,23 @@
+.drinkList {
+  padding: 10px 0 5px;
+  width: 140px;
+  overflow-y: scroll;
+  direction: rtl;
+  height: 40em;
+  grid-column: 1/2;
+  background: linear-gradient(50deg, #d4881540, #7b0ea740, #0f3dbb40);
+  border-radius: 0 30px 30px 0;
+}
+
+.drinkList::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.drinkList::-webkit-scrollbar-track {
+  box-shadow: inset 1px 1px 6px rgba(10, 10, 10, 0.5), inset 1px 1px 6px rgba(17, 0, 168, 0.6);
+}
+ 
+.drinkList::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}

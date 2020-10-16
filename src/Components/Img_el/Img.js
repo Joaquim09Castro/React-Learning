@@ -11,8 +11,8 @@ export default class Img extends Component {
   
   render() {
     return (
-      <div className={img}>
-        <img src={this.props.src} alt={this.props.alt || this.basic}/>
+      <div >
+        <img className={this.props.className + ' ' + img} src={this.props.src} alt={this.props.alt || this.basic}/>
       </div>
     )
   }

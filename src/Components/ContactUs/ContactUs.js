@@ -11,6 +11,15 @@ import Button from '../Button/Button';
 import image_contacts from '../../img/contact-pic.jpg';
 
 export default class ContactUs extends Component {
+  constructor(props) {
+    super(props);
+
+    this.testClick = this.testClick.bind(this);
+  }
+
+  testClick() {
+  }
+  
   render() {
     return (
       <Main>
@@ -22,7 +31,7 @@ export default class ContactUs extends Component {
           <Input id="name-input" type="text" name="Name"/>
           <Input id="email-input" type="email" name="Email"/>
           <TextArea name="Message"/>
-          <Button essaPorra="deu ruim" name="submit" />
+          <Button name="submit" onClick={this.testClick} />
         </Form>
       </Main>
     )

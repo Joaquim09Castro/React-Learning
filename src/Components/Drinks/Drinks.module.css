@@ -1,0 +1,6 @@
+.mainGrid {
+  grid-template:
+  "title title title title" 80px / repeat(4,1fr)
+  ". . . ." 40px / repeat(4,1fr)
+  "drink-list . . ." auto / repeat(4,1fr)
+}

@@ -1,4 +1,4 @@
-.img > img {
+.img{
   grid-area: half1;
   -webkit-margin-before: 0;
     margin-block-start: 0;

@@ -12,7 +12,7 @@ export default class Paragraph extends Component {
   
   render() {
     return (
-        <p className={paragraph}>
+        <p className={paragraph} {...this.props}>
           {this.content}
         </p>
     )

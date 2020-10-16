@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import ContactUs from './Components/ContactUs/ContactUs';
 import AboutUs from './Components/AboutUs/AboutUs';
+import Drinks from './Components/Drinks/Drinks';
 import Home from './Components/Home/Home';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Switch>
             <Route path="/contact" component={ContactUs} />
             <Route path="/about" component={AboutUs} />
+            <Route path="/drinks" component={Drinks} />
             {/* <Route path="/team" component={OurTeam} /> */}
             <Route path="/" component={Home} />
           </Switch>

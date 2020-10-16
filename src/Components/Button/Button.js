@@ -15,7 +15,7 @@ export default class Button extends Component {
   }
 
   click() {
-    console.log('teste');
+    console.log('Button clicked');
   }
   
   render() {
@@ -24,7 +24,7 @@ export default class Button extends Component {
         
         <p className={space}></p>
         
-        <button className={btn} type={this.props.type || "button"}onClick={this.click}>
+        <button className={btn} type={this.props.type || "button"}onClick={this.props.onClick || this.click}>
           {this.props.name}
         </button>
 
