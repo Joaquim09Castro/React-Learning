@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import Main from '../Main/Main';
 import Title from '../Title/Title';

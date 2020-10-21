@@ -17,7 +17,7 @@ a {
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 36px;
   font-family: 'Bilbo Swash Caps', cursive;
 }
 
@@ -25,9 +25,27 @@ a {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-a:hover, .active {
+a:hover {
   text-decoration: underline;
   color: #89f089;
   transform: scale(1.2);
   transition: transform 0.4s;
+}
+
+.active {
+  color: rgb(67, 111, 39);
+  text-shadow: 
+    1px 1px 6px #d0d0d07C,
+    -1px -1px 6px #d0d0d07C,
+    1px -1px 6px #d0d0d07C,
+    -1px 1px 6px #d0d0d07C;
+}
+
+.active:hover {
+  color: rgb(67, 111, 39);
+  text-decoration: none;
+  cursor: default;
+  transform:
+    scale(1)
+    ;
 }

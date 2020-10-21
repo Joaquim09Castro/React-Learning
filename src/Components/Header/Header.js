@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import style from './Header.module.css';
 
 const {
   header,
   logo,
-  links
+  links,
+  active
 } = style;
 export default class Header extends Component {
   render() {
     return (
       <header className={header}>
-        <a href="/drinks" className={links}>Drinks</a>
-        <a href="/about" className={links}>About Us</a>
-        <a href="/" className={logo}><b>Bons Drinks</b></a>
-        <a href="/team" className={links}>Our Team</a>
-        <a href="/contact" className={links}>Contact Us</a>
+        <NavLink exact to="/drinks" activeClassName={active} className={links}>Drinks</NavLink>
+        <NavLink exact to="/about" activeClassName={active} className={links}>About Us</NavLink>
+        <NavLink exact to="/" activeClassName={active} className={logo}>Bons Drinks</NavLink>
+        <NavLink exact to="/team" activeClassName={active} className={links}>Our Team</NavLink>
+        <NavLink exact to="/contact" activeClassName={active} className={links}>Contact Us</NavLink>
       </header>
     )
   }

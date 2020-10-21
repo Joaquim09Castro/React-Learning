@@ -12,17 +12,18 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-        <BrowserRouter>
+      <BrowserRouter>
+        <Header />
           <Switch>
-            <Route path="/contact" component={ContactUs} />
-            <Route path="/about" component={AboutUs} />
-            <Route path="/drinks" component={Drinks} />
-            {/* <Route path="/team" component={OurTeam} /> */}
-            <Route path="/" component={Home} />
+            <Route exact path="/" children={<Home />} />
+            <Route path="/contact" children={<ContactUs />} />
+            <Route path="/about" children={<AboutUs />} />
+            <Route path="/drinks" children={<Drinks />} />
+            {/* <Route path="/team" children={OurTeam} /> */}
+            {/* <Route path="*" children={} /> */}
           </Switch>
-        </BrowserRouter>
-      <Footer />
+          <Footer />
+      </BrowserRouter>
     </div>
   );
 }

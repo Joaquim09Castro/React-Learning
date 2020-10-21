@@ -1,4 +1,7 @@
 .title {
   text-align: center;
   grid-area: title;
+  margin-block-start: 2em;
+  margin-block-end: 0.9em;
+  color: rgba( 110 , 10 , 60 , 0.750 );
 }
