@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Img from '../../Img_el/Img';
 import Paragraph from '../../Paragraph/Paragraph';
 import style from './Card.module.css';
@@ -9,13 +9,18 @@ const {
   card
 } = style;
 
-export default class Card extends Component {
-  render() {
-    return (
-      <div className={card}>
-        <Img src={this.props.img} alt="Drink" className={img}/>
-        <Paragraph className={paragraph}>{this.props.name}</Paragraph>
-      </div>
-    )
-  }
+const Card = props => {
+  const {
+    name,
+    img: srcImg,
+    id
+  } = props;
+  return (
+    <div className={card} key={id.toString()} id={id}>
+      <Img src={srcImg} alt="Drink" className={img}/>
+      <Paragraph className={paragraph}>{name}</Paragraph>
+    </div>
+  )
 }
+
+export default Card;

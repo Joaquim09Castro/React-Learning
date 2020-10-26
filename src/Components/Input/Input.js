@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import style from './Input.module.css';
 
 const {
@@ -7,38 +7,40 @@ const {
   label
 } = style;
 
-export default class Input extends Component {
-  constructor(props) {
-    super(props);
-    this.basic = "Input-componet";
+const Input = props => {
+  const basic = 'input-component';
 
-    this.handleBlur = this.handleBlur.bind(this);
-  }
+  const {
+    name,
+    id,
+    placeholder,
+    type
+  } = props;
 
-  handleBlur() {
-    if (!this.value) {
-      alert(`Preencha o Campo ${this.props.name}`)
+  const handleBlur = (event) => {
+    if (!event.target.value) {
+      alert(`Preencha o Campo ${name}`)
     }
   }
 
-  render() {
-    return (
-      //name-input
-      <div className={inputDiv} id={this.props.id || this.basic}>
+  return (
+    //name-input
+    <div className={inputDiv} id={id || basic}>
 
-        <label className={label} htmlFor={(this.props.id || this.basic) + ' input'}>
-          {this.props.name || this.basic}:
-        </label>
+      <label className={label} htmlFor={(id || basic) + ' input'}>
+        {name || basic}:
+      </label>
 
-        <input 
-          className={input}
-          id={(this.props.id || this.basic) + ' input'}
-          placeholder={this.props.placeholder || this.props.name || this.basic}
-          type={this.props.type}
-          onBlur={this.handleBlur}
-        />
+      <input 
+        className={input}
+        id={(id || basic) + ' input'}
+        placeholder={placeholder || name || basic}
+        type={type}
+        onBlur={handleBlur}
+      />
 
-      </div>
-    )
-  }
+    </div>
+  )
 }
+
+export default Input;

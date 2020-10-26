@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import style from './CardList.module.css';
 
 const { drinkList } = style;
 
-export default class CardList extends Component {
+const CardList = ({children , ...props}) => {
   
-  render() {
-    return (
-      <div className={drinkList} {...this.props}>
-        {this.props.children}
-      </div>
-    )
-  }
+  return (
+    <div className={drinkList} {...props}>
+      {children}
+    </div>
+  )
 }
+
+export default CardList;

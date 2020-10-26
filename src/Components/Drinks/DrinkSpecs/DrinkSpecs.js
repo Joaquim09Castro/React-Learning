@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class DrinkSpecs extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+const DrinkSpecs = props => {
+  return (
+    <div>
+
+    </div>
+  )
 }
+
+export default DrinkSpecs;

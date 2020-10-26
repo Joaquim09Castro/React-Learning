@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Main from '../Main/Main';
 import Title from '../Title/Title';
@@ -10,30 +10,21 @@ import Button from '../Button/Button';
 
 import image_contacts from '../../img/contact-pic.jpg';
 
-export default class ContactUs extends Component {
-  constructor(props) {
-    super(props);
+const ContactUs = () => {
+  return (
+    <Main>
+      <Title>Contact Us</Title>
 
-    this.testClick = this.testClick.bind(this);
-  }
+      <Img src={image_contacts} alt="typewriter"/>
 
-  testClick() {
-  }
-  
-  render() {
-    return (
-      <Main>
-        <Title>Contact Us</Title>
-
-        <Img src={image_contacts} alt="typewriter"/>
-
-        <Form>
-          <Input id="name-input" type="text" name="Name"/>
-          <Input id="email-input" type="email" name="Email"/>
-          <TextArea name="Message"/>
-          <Button name="submit" onClick={this.testClick} />
-        </Form>
-      </Main>
-    )
-  }
+      <Form>
+        <Input id="name-input" type="text" name="Name"/>
+        <Input id="email-input" type="email" name="Email"/>
+        <TextArea name="Message"/>
+        <Button name="submit"  type="button"/>
+      </Form>
+    </Main>
+  )
 }
+
+export default ContactUs;

@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { main } from './Main.module.css';
 
-export default class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.styles = `${main} ${this.props.className}`;
-  }
-  
-  render() {
-    return (
-      <main className={main + (' ' + this.props.className || '')}>
-        {this.props.children.length > 1 ? 
-          this.props.children.map(child => child) : this.props.children}
-      </main>
-    )
-  }
+const Main = ({ children , className}) => {
+
+  return (
+    <main className={main + (' ' + className || '')}>
+      {children.length > 1 ? 
+        children.map(child => child) : children}
+    </main>
+  )
 }
+
+export default Main;

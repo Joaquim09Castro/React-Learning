@@ -33,9 +33,9 @@ export default class Drinks extends Component {
           const {
             idDrink: id,
             strDrink: name,
-            strDrinkThumb: img
+            strDrinkThumb: imgSrc
           } = drink;
-          return <Card key={id} name={name} img={img} />;
+          return <Card id={id} key={id} name={name} img={imgSrc} />;
         } else { }
       })
 
@@ -56,3 +56,7 @@ export default class Drinks extends Component {
     )
   }
 }
+
+/*
+ * Não foi possivel converter para componente funcional
+*/

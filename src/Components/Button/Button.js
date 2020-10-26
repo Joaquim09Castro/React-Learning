@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import style from './Button.module.css';
 
 const {
@@ -7,28 +7,25 @@ const {
   btn
 } = style;
 
-export default class Button extends Component {
-  constructor(props) {
-    super(props);
+const Button = ( {...props} ) => {
+  const [ count , setCount ] = React.useState( 1 )
 
-    this.click = this.click.bind(this);
+  async function click() {
+    console.log(count);
+    setCount( count + 1 );
   }
 
-  click() {
-    console.log('Button clicked');
-  }
-  
-  render() {
-    return (
-      <div className={btnGrid}>
-        
-        <p className={space}></p>
-        
-        <button className={btn} type={this.props.type || "button"}onClick={this.props.onClick || this.click}>
-          {this.props.name}
-        </button>
+  return (
+    <div className={btnGrid}>
+      
+      <p className={space}></p>
+      
+      <button onClick={click} {...props} className={btn}>
+        {props.name}
+      </button>
 
-      </div>
-    )
-  }
+    </div>
+  )
 }
+
+export default Button;

@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import style from './Form.module.css';
 
 
-export default class Form extends Component {
-  render() {
-    return (  
-        <form className={style.form}>
-          {this.props.children.length > 1 ? 
-          this.props.children.map(child => child) : this.props.children}
-        </form>
-    )
-  }
+const Form = ({children}) => {
+  return (
+    <form className={style.form}>
+      {children.length > 1 ? 
+        children.map(child => child) : children }
+    </form>
+  )
 }
+
+export default Form;
